@@ -1,8 +1,8 @@
-import express from "express";
+import { Router } from "express";
 import { users } from "../db.js";
 
 //funciona de forma igual que expressApp
-const accountRouter = express.Router();
+const accountRouter = Router();
 
 //MIDDLEWARE
 accountRouter.use((req, res, next) => {
